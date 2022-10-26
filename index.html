@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Food Survey Form</h1>
+    <p id="description">Please fill the form, thankyou</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How old are you?" min="7" max="65" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        Please select your region
+        <select name="dropdown" id="dropdown">
+          <option value="jkt">Jakarta</option>
+          <option value="tky">Tokyo</option>
+        </select>
+      </label>
+
+      <label for="food" id="food-label"> What is your favorite food? </label>
+      <input type="radio" name="food" id="food" value="1" checked /> Rendang <br />
+      <input type="radio" name="food" id="food" value="2" /> Ketoprak <br />
+      <input type="radio" name="food" id="food" value="3" /> Pecel Lele <br />
+      <input type="radio" name="food" id="food" value="4" /> Ayam Bakar <br />
+      <input type="radio" name="food" id="food" value="5" /> Nasi Goreng <br />
+
+      <br /><br />
+
+      <label for="food" id="food-label"> Please select your favorite dessert </label>
+      <input type="checkbox" value="1" name="food" id="food" /> Chocolate caramel pudding cake <br />
+      <input type="checkbox" value="2" name="food" id="food" /> Mango cheese cake <br />
+      <input type="checkbox" value="3" name="food" id="food" /> Dessert mutiara mangga <br />
+      <input type="checkbox" value="4" name="food" id="food" /> Regal strawberry cream cheese <br />
+
+      <br /><br />
+
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </label>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
